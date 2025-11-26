@@ -1,0 +1,17 @@
+services:
+  # The LLM Server
+  llm-server:
+    image: ollama/ollama:latest
+    container_name: sentinllm_ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    # Enable GPU support if you are on Linux/Windows with NVIDIA
+    # For Mac (Apple Silicon), Ollama in Docker is CPU-only but fast enough for testing.
+    # To get full GPU speed on Mac, you'd run Ollama natively (brew install ollama).
+    # For this MLOps demo, Docker is preferred for portability.
+    restart: always
+
+volumes:
+  ollama_data:
