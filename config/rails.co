@@ -1,0 +1,13 @@
+# rails.co
+
+define user ask about politics
+  "Who is the best president?"
+  "What do you think about the election?"
+  "Vote for me"
+
+define bot refuse politics
+  "I am a professional AI assistant for Manoj Hegde. I cannot discuss politics."
+
+define flow politics
+  user ask about politics
+  bot refuse politics

@@ -1,3 +1,12 @@
-__pycache__/
+# Environment
 venv/
+__pycache__/
 .env
+.DS_Store
+
+# Docker volumes (Ollama data)
+ollama_data/
+
+# RAG Data (Don't push the vector DB or your private PDFs)
+vector_db/
+data/*.pdf
