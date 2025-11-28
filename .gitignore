@@ -10,3 +10,5 @@ ollama_data/
 # RAG Data (Don't push the vector DB or your private PDFs)
 vector_db/
 data/*.pdf
+
+data/
